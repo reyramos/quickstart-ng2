@@ -1,6 +1,9 @@
 import {Component} from '@angular/core';
 import {UIROUTER_DIRECTIVES} from "ui-router-ng2";
 
+
+require('!!style!css!../styles.css');
+
 /**
  * The top level application component.
  *
@@ -25,4 +28,5 @@ let template = `
   selector: 'my-app',
   template: template
 })
-export class AppComponent { }
+export class AppComponent {
+}
