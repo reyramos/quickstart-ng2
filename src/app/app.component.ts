@@ -17,6 +17,7 @@ let template = `
 <a uiSref="app.foo" [uiOptions]="{ inherit: false }" uiSrefActive="active">Foo</a>
 <a uiSref="app.bar" [uiOptions]="{ inherit: false }" uiSrefActive="active">Bar</a>
 <a uiSref="app.baz" [uiOptions]="{ inherit: false }" uiSrefActive="active">Baz</a>
+<a  routerLink="/lazy" routerLinkActive="active">lazy</a>
 
 <ui-view></ui-view>
 

@@ -14,9 +14,7 @@ import {trace, UIROUTER_PROVIDERS, UIView, UIRouterConfig, Category, UIROUTER_DI
 import {MyUIRouterConfig} from "./router.config";
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/map';
-
-
-
+import {routing} from "./app.routing";
 
 // Enables tracing (check the console) of:
 // - TRANSITION transition start, redirect, success, error, ignored
@@ -28,6 +26,7 @@ trace.enable(Category.TRANSITION, Category.VIEWCONFIG);
     BrowserModule,
     FormsModule,
     HttpModule,
+    routing
   ],
   declarations: [
     UIROUTER_DIRECTIVES
